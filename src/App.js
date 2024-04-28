@@ -5,6 +5,7 @@ import Textform from "./Components/Textform";
 import Navbar from "./Components/Navbar";
 import React, { useState } from "react";
 import Alert from "./Components/Alert";
+import Footer from "./Components/Footer";
 // import {
 //   BrowserRouter as Router,
 //     Routes,
@@ -59,6 +60,7 @@ function App() {
         mode={mode}
         showalert={showalert}
       />
+      <Footer/>
     </>
   );
 }
