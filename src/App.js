@@ -29,7 +29,7 @@ function App() {
   const togglemode = () => {
     if (mode === "light") {
       setmode("dark");
-      setswitchbtn("Enable Light Mode");
+      setswitchbtn("Enable Dark Mode");
       document.body.style.backgroundColor = "#113863";
       document.body.style.color = "white";
       showalert("Dark mode has been enabled", "success");
