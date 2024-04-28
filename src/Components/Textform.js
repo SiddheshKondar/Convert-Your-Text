@@ -53,7 +53,7 @@ const converttojsx=()=>{
   return (
     <div>
         <div className="container">
-          <h1 className="my-3">{props.heading}</h1>
+          <h1>{props.heading}</h1>
           <textarea className="form-control my-3" onChange={handleonchange} value={text}  style={{border:"1px solid black", backgroundColor: props.mode=== "dark"?"#919096":"white"}} id="myBox" rows="8" defaultValue={""} />
             <button className="btn btn-primary m-1" onClick={handleupclick}>Convert to uppercase </button>
             <button className="btn btn-primary m-1" onClick={handlelowclick}>Convert to lowercase </button>
@@ -63,11 +63,10 @@ const converttojsx=()=>{
         </div>
         <div className="container my-3"> 
         <h1>Your text summary</h1>
-        <p>{text.split(" ").length}words and {text.length} characters</p>
-        <p>{0.008*text.split(" ").length} Minutes read</p>
+        <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
+        <p>{0.008*text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes read</p>
         <h2>Preview</h2>
-        <p>{text.length>0?text:"Enter text to preview"}</p>
-        
+        <p>{text.length>0?text:"Enter text to preview"}</p>        
         </div>
       </div>
   );
