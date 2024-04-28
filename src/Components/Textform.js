@@ -53,7 +53,7 @@ const converttojsx=()=>{
   return (
     <div>
         <div className="container">
-          <h1>{props.heading}</h1>
+          <h1 className="my-2">{props.heading}</h1>
           <textarea className="form-control my-3" onChange={handleonchange} value={text}  style={{border:"1px solid black", backgroundColor: props.mode=== "dark"?"#919096":"white"}} id="myBox" rows="8" defaultValue={""} />
             <button className="btn btn-primary m-1" onClick={handleupclick}>Convert to uppercase </button>
             <button className="btn btn-primary m-1" onClick={handlelowclick}>Convert to lowercase </button>
