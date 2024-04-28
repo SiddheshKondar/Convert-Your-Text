@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 export default function (props) {
   return (
     <>
-<nav className={`navbar navbar-expand-lg navbar-${props.mode==="light"?"secondary":"dark"} bg-${props.mode==="light"?"secondary":"dark"}`}>
+<nav className={`navbar navbar-expand-lg navbar-${/*props.mode==="light"?"secondary":*/"dark"} bg-${/*props.mode==="light"?"secondary":*/"dark"}`}>
   <div className="container-fluid">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <a className="navbar-brand" href="#">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
@@ -22,7 +23,7 @@ export default function (props) {
       </ul>
       <div className={`form-check form-switch text-${props.mode === "light"? "dark":"light"}`}>
   <input className="form-check-input" onClick={props.togglemode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.switchbtn} </label>
+  <label className="form-check-label" style={{color:"white"}} htmlFor="flexSwitchCheckDefault">{props.switchbtn} </label>
 </div>
 
 

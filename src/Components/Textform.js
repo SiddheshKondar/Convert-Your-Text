@@ -53,13 +53,13 @@ const converttojsx=()=>{
   return (
     <div>
         <div className="container">
-          <h1 className="my-2">{props.heading}</h1>
-          <textarea className="form-control my-3" onChange={handleonchange} value={text}  style={{backgroundColor: props.mode=== "dark"?"#919096":"white"}} id="myBox" rows="8" defaultValue={""} />
-            <button className="btn btn-primary mx-1" onClick={handleupclick}>Convert to uppercase </button>
-            <button className="btn btn-primary" onClick={handlelowclick}>Convert to lowercase </button>
-            <button className="btn btn-primary mx-1" onClick={cleartext}>Clear Text</button>
-            <button className="btn btn-primary " onClick={copytext}>Copy Text</button>
-            <button className="btn btn-primary mx-1" onClick={converttojsx}>Convert HTML to JSX</button>
+          <h1 className="my-3">{props.heading}</h1>
+          <textarea className="form-control my-3" onChange={handleonchange} value={text}  style={{border:"1px solid black", backgroundColor: props.mode=== "dark"?"#919096":"white"}} id="myBox" rows="8" defaultValue={""} />
+            <button className="btn btn-primary m-1" onClick={handleupclick}>Convert to uppercase </button>
+            <button className="btn btn-primary m-1" onClick={handlelowclick}>Convert to lowercase </button>
+            <button className="btn btn-primary m-1" onClick={cleartext}>Clear Text</button>
+            <button className="btn btn-primary m-1" onClick={copytext}>Copy Text</button>
+            <button className="btn btn-primary m-1" onClick={converttojsx}>Convert HTML to JSX</button>
         </div>
         <div className="container my-3"> 
         <h1>Your text summary</h1>

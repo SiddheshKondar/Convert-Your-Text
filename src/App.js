@@ -55,7 +55,7 @@ function App() {
       <About /> */}
 
       <Textform
-        heading="Enter the text to analyze"
+        heading="Enter your text here"
         mode={mode}
         showalert={showalert}
       />
